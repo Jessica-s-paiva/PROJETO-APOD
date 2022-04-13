@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/FOTO.png');
+    background-size: cover;
+    opacity: 0.9;
+}
+
+:root{
+    --Primaria: #400101;
+    --Secundaria: #733614;
+    --laranja: #D55208;
+}
