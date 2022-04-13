@@ -5,14 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto APOD</title>
+    <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/index.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
     <script src="./js/index.js" defer></script>
 </head>
 <body>
     <header>
-
-    </header>
+        <a href="../../index.html"><button class="botao">Jogar novamente</button></a>
+        <nav>
+            <a href="https://www.linkedin.com/in/jessica-dos-santos-paiva/"><img class="icones" src="./img/logotipo-do-linkedin.png" alt="ícone linkedin"></a>
+            <a href="https://github.com/Jessica-s-paiva"><img class="icones" src="./img/placa-do-github.png" alt="ícone github"></a>
+        </nav>
     <main class="container">
         <section>
             <form>
@@ -20,16 +24,13 @@
                 <input type="date" id="data">
                 <input type="submit" id="enviar" value="Enviar">
             </form>
-        </section>
-        
+        </section>     
         <section>
             <div id="data-retorno"></div>
             <div><h2 id="tituloDaImagem"></h2></div>
-            <div><img id="imagem-retorno" src="" alt=""></div>
+            <div><img id="imagem" src="" alt=""></div>
             <div id="informacao-retorno"></div>
-        </section>
-        
+        </section>  
     </main>
-    
 </body>
 </html>

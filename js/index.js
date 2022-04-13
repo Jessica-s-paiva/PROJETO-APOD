@@ -8,7 +8,7 @@ $("#enviar").click(function(event){
         success: function (resposta){
             $("#dataDaImagem").text(resposta.date);
             $("#tituloDaImagem").text(resposta.title);
-            $("#imagem-retorno").attr("src", `${resposta.hdurl}`);
+            $("#imagem").attr("src", `${resposta.hdurl}`);
             $("#info").text(resposta.explanation);
         }
     })
