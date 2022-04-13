@@ -1,3 +1,4 @@
+$("#imagem").hide();
 $("#enviar").click(function(event){
     event.preventDefault();
     const data = $("#data").val();
@@ -9,6 +10,7 @@ $("#enviar").click(function(event){
             $("#dataDaImagem").text(resposta.date);
             $("#tituloDaImagem").text(resposta.title);
             $("#imagem").attr("src", `${resposta.hdurl}`);
+            $("#imagem").show();
             $("#info").text(resposta.explanation);
         }
     })
