@@ -1,0 +1,21 @@
+.icones{
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    color: white;
+}
+
+#imagem{
+    width: 600px;
+    height: 600px;
+}
