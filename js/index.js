@@ -1,4 +1,5 @@
 $("#imagem").hide();
+$("p").hide();
 $("#enviar").click(function(event){
     event.preventDefault();
     const data = $("#data").val();
@@ -11,6 +12,7 @@ $("#enviar").click(function(event){
             $("#tituloDaImagem").text(resposta.title);
             $("#imagem").attr("src", `${resposta.hdurl}`);
             $("#imagem").show();
+            $("p").show();
             $("#info").text(resposta.explanation);
         }
     })
