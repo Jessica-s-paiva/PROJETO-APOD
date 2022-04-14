@@ -8,7 +8,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    text-align: justify;
     height: 100%;
     width: 100%;
     color: white;
@@ -36,8 +36,8 @@ form{
     font-size: 32px;
 }
 #imagem{
-    width: 600px;
-    height: 400px;
+    width: 500px;
+    height: 300px;
     box-shadow: 3px 3px 3px #333;
     border-radius: 5px;
 }
@@ -53,4 +53,9 @@ input{
 p{
     font-family: 'Amatic SC', cursive;
     font-size: 20px;  
+}
+
+h2{
+    font-family: 'Amatic SC', cursive;
+    font-size: 32px; 
 }
