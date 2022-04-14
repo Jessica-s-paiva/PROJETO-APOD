@@ -12,8 +12,9 @@ $("#enviar").click(function(event){
     const ano = dataTeste.getFullYear();
     const dataAtual = `${ano}-${mes}-${dia}`;
     const partesData = data.split("-");
+    const partesDataAtual = dataAtual.split("-");
     try {
-        console.log(partesData);
+        console.log(partesDataAtual);
         $.ajax({
             url: `https://api.nasa.gov/planetary/apod?date=${data}&api_key=w1d9wvAkhHPGhaGl6WqpJYk444B9CYxJWiaBEPlZ`, 
             success: function (resposta){
