@@ -11,13 +11,11 @@ $("#enviar").click(function(event){
     const mes = String(dataTeste.getMonth() + 1).padStart(2,'0');
     const ano = dataTeste.getFullYear();
     const dataAtual = `${ano}-${mes}-${dia}`;
-    // const partesData = data.split("-");
-    // const partesDataAtual = dataAtual.split("-");
     try {
-        console.log(partesDataAtual);
         $.ajax({
             url: `https://api.nasa.gov/planetary/apod?date=${data}&api_key=w1d9wvAkhHPGhaGl6WqpJYk444B9CYxJWiaBEPlZ`, 
             success: function (resposta){
+                console.log(dataAtual);
                 $("#data").attr("max", `${dataAtual}`);
                 $("#dataDaImagem").text(resposta.date);
                 $("#tituloDaImagem").text(resposta.title);

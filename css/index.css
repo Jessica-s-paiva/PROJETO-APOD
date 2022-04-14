@@ -17,6 +17,7 @@
     box-shadow: 20px;
     text-shadow: 3px 3px black;
 }
+
 section{
     display: flex;
     flex-direction: column;
